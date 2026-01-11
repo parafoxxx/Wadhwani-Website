@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Wadhwani Institute of Excellence | IIT Kanpur</title>
+    <meta name="description" content="The Wadhwani Institute of Excellence at IIT Kanpur is dedicated to fostering world-class research, executive education, and transformative innovation across technology and management domains." />
+    <meta name="author" content="Wadhwani Institute of Excellence" />
+   
+    <link rel="icon" type="image/png" href="/Wadhwani-Foundation.png" />
+
+    <meta property="og:title" content="Wadhwani Institute of Excellence | IIT Kanpur" />
+    <meta
+      property="og:description"
+      content="Advancing Excellence in Innovation, Research & Leadership. World-class research, executive education, and transformative innovation at IIT Kanpur."
+    />
+    <meta property="og:type" content="website" />
+    <!-- <meta
+      property="og:image"
+      content="https://hercules.app/og/app/%VITE_HERCULES_WEBSITE_ID%.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://hercules.app/og/app/%VITE_HERCULES_WEBSITE_ID%.png"
+    />
+    <meta name="twitter:site" content="@UseHercules" /> -->
+
+    <!-- Detect dark mode preference and set the class before next-themes loads. This avoids a flash of unstyled content (FOUC) when the page loads. -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme");
+          if (theme === "system" || !theme) {
+            var prefersDark = window.matchMedia(
+              "(prefers-color-scheme: dark)",
+            ).matches;
+            theme = prefersDark ? "dark" : "light";
+          }
+          document.documentElement.classList.add(theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link href="/src/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
