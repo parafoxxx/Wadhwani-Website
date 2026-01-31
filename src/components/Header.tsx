@@ -42,7 +42,8 @@ export default function Header() {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="text-xl font-serif font-semibold tracking-tight text-primary hover:text-accent transition-colors"
             >
-              Wadhwani Institute
+              <img src="/image.png"  alt="Wadhwani Center of Excellence" className="h-20 w-80 inline-block mr-2" />
+
             </button>
 
             {/* Desktop Navigation */}

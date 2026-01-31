@@ -91,7 +91,7 @@ export default function Programs() {
                   <img 
                     src={program.image}
                     alt={program.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-110 h-60 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div 
                     className="absolute bottom-0 left-0 w-full h-2"

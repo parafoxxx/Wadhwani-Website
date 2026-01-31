@@ -74,10 +74,10 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight mb-8 text-balance">
-            Wadhwani Innovation Network <br /> Center of Excellence <br />IIT Kanpur
+            Wadhwani Center for Translational <br /> Research & Innovation <br />IIT Kanpur
               </h1>
           <p className="text-lg md:text-.1xl text-muted-foreground max-w-5xl mx-auto leading-relaxed">
-            Through regular calls for proposals, WIN CoE nurtures cutting-edge bioengineering research at IIT Delhi by offering funding, mentorship and support services in areas like diagnostics, therapeutics, MedTech and Personalized healthcare. WinCoE offer two targeted grant schemes to accelerate innovation across Technology readiness levels (TRL’s): </p>
+            The WIN Centre of Excellence (CoE) at IIT Kanpur, established in collaboration with the Wadhwani Foundation, aims at taking groundbreaking innovations in emerging technologies from research laboratory to commercialization aligning with National Health Missions. The promotes interdisciplinary solutions bridging biology, medicine, & engineering to address national & global challenges in healthcare & technology </p> 
         </motion.div>
 
         <motion.div
@@ -100,10 +100,11 @@ export default function Hero() {
           </button>
           <button 
              onMouseEnter={(e) => {
-    e.currentTarget.style.backgroundColor = "red";
+    e.currentTarget.style.backgroundColor = "#e68c63";
   }}
-  
-  onMouseLeave={(e)=> {e.currentTarget.style.backgroundColor="gold";}}
+  onMouseLeave={(e=> {
+    e.currentTarget.style.backgroundColor = "#f2682a";
+  })}
             onClick={() => window.open("mailto:contact@iitk.ac.in", "_blank")}
             className="px-8 py-3 bg-accent text-accent-foreground font-medium hover:bg-accent/90 transition-colors w-full sm:w-auto"
           >
