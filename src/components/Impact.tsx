@@ -9,7 +9,7 @@ export default function Impact() {
 
   const initiatives = [
     {
-      title: "Technology Transfer & Commercialization",
+      title: "Translation Transfer & Commercialization",
       description: "Bridging the gap between academic research and market applications through strategic partnerships and licensing agreements.",
       color: "#0D9488"
     },
