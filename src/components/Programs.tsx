@@ -8,47 +8,47 @@ export default function Programs() {
 
   const programs = [
     {
-      category: "Executive Education",
-      title: "Advanced Management Program",
-      description: "An intensive program for senior leaders focusing on strategic thinking, organizational transformation, and global business dynamics.",
-      duration: "12 Weeks",
-      format: "Hybrid",
+      category: "Research Programs",
+      title: "Translational Research Program (WIN Projects)",
+      description: "A structured program supporting translational research projects across Technology Readiness Levels (TRLs) 3–7, with a focus on healthcare technologies, bioengineering, biotechnology, and artificial intelligence.",
+      duration: "Project-based (2–3 years)",
+      format: "On-Campus | Collaborative",
       color: "#0D9488",
       image: "https://images.unsplash.com/photo-1758691736821-f1a600c0c3f1?w=1080&q=80"
     },
     {
-      category: "Executive Education",
-      title: "Technology Leadership Program",
-      description: "Designed for technology executives and CTOs to navigate digital disruption, innovation management, and technology strategy.",
-      duration: "8 Weeks",
-      format: "Residential",
+      category: "Research Programs",
+      title: "Bioengineering & Biotechnology Program",
+      description: "This program supports translational research in bioengineering and biotechnology, addressing national and global challenges in healthcare, therapeutics, diagnostics, regenerative medicine, antimicrobial resistance, and lifestyle diseases.",
+      duration: "Lifestyle diseases",
+      format: "Interdisciplinary | Research-driven",
       color: "#C9A24D",
       image: "https://images.unsplash.com/photo-1646066490017-c935b1a1eb0f?w=1080&q=80"
     },
     {
-      category: "Student Programs",
-      title: "Innovation Fellowship",
-      description: "A selective fellowship supporting graduate students pursuing cutting-edge research with real-world impact potential.",
-      duration: "1 Year",
-      format: "On-Campus",
+      category: "Research Programs",
+      title: "Artificial Intelligence for Societal Impact Program",
+      description: "A focused initiative supporting AI-driven translational research for healthcare, cybersecurity, digital public infrastructure, agriculture, energy systems, and mobility, with emphasis on real-world deployment.",
+      duration: "AI in healthcare",
+      format: "Interdisciplinary | Applied Research",
       color: "#1E40AF",
       image: "https://images.unsplash.com/photo-1766297248084-b32bacb4a1e4?w=1080&q=80"
     },
     {
-      category: "Student Programs",
-      title: "Entrepreneurship Incubation",
-      description: "Comprehensive support for student ventures including mentorship, funding guidance, and access to industry networks.",
-      duration: "6-12 Months",
-      format: "Flexible",
+      category: "Innovation Programs",
+      title: "Startup & Technology Commercialization Support",
+      description: "This program facilitates technology transfer, IP creation, startup formation, and commercialization, leveraging IIT Kanpur’s incubation ecosystem, industry partnerships, and regulatory support mechanisms.",
+      duration: "IP development",
+      format: "On-Campus | Industry-linked",
       color: "#EA580C",
       image: "https://images.unsplash.com/photo-1605781231474-f60dea478e8a?w=1080&q=80"
     },
     {
-      category: "Faculty Development",
-      title: "Research Collaboration Initiative",
-      description: "Fostering interdisciplinary collaboration among faculty members and facilitating partnerships with leading global institutions.",
-      duration: "Ongoing",
-      format: "Collaborative",
+      category: "Faculty & Researcher Programs",
+      title: "Research Collaboration & Capacity Building Program",
+      description: "Designed to strengthen collaboration among faculty, researchers, industry partners, and national and international institutions through joint research, workshops, training, and collaborative initiatives.",
+      duration: "Collaborative",
+      format: "Collaborative | Network-driven",
       color: "#14B8A6",
       image: "https://images.unsplash.com/photo-1743834147172-37c12011b321?w=1080&q=80"
     },
@@ -64,12 +64,11 @@ export default function Programs() {
         >
           <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4">Programs</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-            Educational Excellence
+            Translational Research Programs
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mb-16">
-            Our programs are designed to challenge, inspire, and equip participants with the knowledge 
-            and capabilities needed to lead in an increasingly complex world.
-          </p>
+            <p className="text-lg text-muted-foreground w-full mb-16">
+            Our programs are designed to strengthen translational research, accelerate technology development, and support commercialization by integrating academic research, industry collaboration, and innovation ecosystems.
+            </p>
         </motion.div>
 
         <div className="space-y-8">
