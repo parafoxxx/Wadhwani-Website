@@ -34,7 +34,7 @@ export default function Research() {
   ];
 
   return (
-    <section id="research" className="py-32 px-6 lg:px-12 bg-background" ref={ref}>
+    <section id="research" className="py-15 px-6 lg:px-12 bg-background" ref={ref}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
