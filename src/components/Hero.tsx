@@ -74,8 +74,11 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight mb-8 text-balance">
-            Wadhwani Center for Translational <br /> Research & Innovation <br />IIT Kanpur
+            Wadhwani Center for Translational <br /> Research & Innovation 
               </h1>
+              <h4 className="font-serif text-4xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight mb-8 text-balance">
+         IIT Kanpur
+              </h4>
           <p className="text-lg md:text-.1xl text-muted-foreground max-w-5xl mx-auto leading-relaxed">
             The WIN Centre of Excellence (CoE) at IIT Kanpur, established in collaboration with the Wadhwani Foundation, aims at taking groundbreaking innovations in emerging technologies from research laboratory to commercialization aligning with National Health Missions. The promotes interdisciplinary solutions bridging biology, medicine, & engineering to address national & global challenges in healthcare & technology </p> 
         </motion.div>
@@ -88,7 +91,7 @@ export default function Hero() {
         >
           <button 
             onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-            className="px-8 py-3 bg-primary text-primary-foreground font-medium hover:bg-[#0D9488] transition-colors w-full sm:w-auto"
+            className="px-8 py-3 bg-primary text-primary-foreground font-medium hover:bg-[#f6861f] transition-colors w-full sm:w-auto"
           >
             Learn More
           </button>

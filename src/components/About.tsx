@@ -22,9 +22,9 @@ export default function About() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4">About</p>
+          <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4"></p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-8">
-            Building Tomorrow's Leaders
+            About WCTRI at IIT Kanpur
           </h2>
         </motion.div>
 
@@ -37,32 +37,33 @@ export default function About() {
           <div>
             <div className="h-80 mb-6 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1763277211600-e726e224c5ae?w=1080&q=80"
+                src="../../public/wadh1.png"
                 alt="IIT Kanpur Campus"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                className="w-200 h-110 object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
               <p>
-                Established as a center of excellence within IIT Kanpur, the Wadhwani Institute 
-                represents a commitment to advancing knowledge, fostering innovation, and developing 
-                leadership capabilities that address the most pressing challenges of our time.
-              </p>
+                The unparalleled spirit of innovation and technological advancement at IIT Kanpur marks
+it as a dynamic nexus where academia, industry, and entrepreneurial zeal converge. Over
+the years, the institute has consistently delivered groundbreaking products with national
+significance, epitomizing its commitment to progress.      </p>
               <p>
-                Through rigorous research, transformative education, and meaningful industry engagement, 
-                we cultivate an ecosystem where ideas flourish and impact is measurable.
-              </p>
+                Notably, IIT Kanpur has placed
+research at the core of its capabilities, engaging both faculty members and students in
+pioneering research endeavors across diverse disciplines  </p>
             </div>
           </div>
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              Our interdisciplinary approach bridges technology, management, and entrepreneurship, 
-              creating pathways for scholars, executives, and entrepreneurs to collaborate and innovate.
-            </p>
+              The vision for WCTRI at IITK would be to become a leader in the development and
+translation of creative research and innovation in strategically important areas through
+product generation and spinout startups.  </p>
             <p>
-              Located at one of India's premier institutes, we leverage world-class infrastructure 
-              and a distinguished faculty to deliver programs that meet international standards.
-            </p>
+              The overall objective of WCTRI at IITK would be
+to enhance the ability of both the academic and industrial sectors to join hands in-order
+to innovate and create value through a greater focus on long-term research.
+ </p>
             <div className="h-80 mt-6 overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1602052294200-a8b75e03adfe?w=1080&q=80"
