@@ -10,22 +10,22 @@ export default function Impact() {
   const initiatives = [
     {
       title: "Translation Transfer & Commercialization",
-      description: "Bridging the gap between academic research and market applications through strategic partnerships and licensing agreements.",
+      description: "Enabling the progression of academic research from laboratory validation to market-ready technologies through structured support for technology readiness, intellectual property creation, licensing, and commercialization.",
       color: "#0D9488"
     },
     {
-      title: "Industry Collaboration Projects",
-      description: "Co-creating solutions with leading corporations to address real-world challenges in manufacturing, services, and technology sectors.",
+      title: "Industry-Academia Collaboration",
+      description: "Facilitating sustained collaboration with industry partners to co-develop, validate, and scale technologies in healthcare, medical devices, artificial intelligence, cybersecurity, and engineering domains.",
       color: "#C9A24D"
     },
     {
-      title: "Startup Ecosystem Development",
-      description: "Nurturing early-stage ventures through mentorship, seed funding, and connections to venture capital networks.",
+      title: "Startup & Innovation Ecosystem Enablement",
+      description: "Supporting faculty- and student-led entrepreneurship by leveraging IIT Kanpur’s incubation ecosystem, mentoring translational research teams, and strengthening pathways for startup creation and growth.",
       color: "#1E40AF"
     },
     {
-      title: "Policy Advisory & Thought Leadership",
-      description: "Contributing to national discourse on innovation policy, technology governance, and economic development strategies.",
+      title: "National Engagement & Innovation Leadership",
+      description: "Aligning translational research with national missions and innovation frameworks by engaging with government agencies, innovation networks, and stakeholders to promote responsible and impactful technology development.",
       color: "#EA580C"
     },
   ];
@@ -42,9 +42,8 @@ export default function Impact() {
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
             Innovation & Engagement
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mb-16">
-            We translate research insights into tangible outcomes, fostering innovation ecosystems 
-            that drive economic growth and societal progress.
+          <p className="text-lg text-muted-foreground w-full mb-13">
+           WCTRI focuses on strengthening translational research by converting academic discoveries into deployable technologies, fostering collaboration between academia, industry, startups, and policymakers to generate measurable societal and economic impact.
           </p>
         </motion.div>
 
