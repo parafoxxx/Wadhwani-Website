@@ -70,7 +70,7 @@ export default function About() {
 
             <div className="h-80 mt-6 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1602052294200-a8b75e03adfe?w=1080&q=80"
+                src="../../public/wadh2.png"
                 alt="Research Facility"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />

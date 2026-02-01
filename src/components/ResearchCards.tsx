@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import { useInView } from "./useInView";
 
 export default function ResearchCards() {
@@ -10,31 +10,32 @@ export default function ResearchCards() {
     {
       title: "AI & Machine Learning",
       description: "Pushing boundaries in neural networks, computer vision, and natural language processing.",
-      image: "https://images.unsplash.com/photo-1758549885423-819fd86e04f0?w=1080&q=80",
-      color: "#0D9488"
+      image: "../../public/Screenshot 2026-02-01 061855.png",
+      color: "#723a3a"
+      
     },
     {
       title: "Sustainable Innovation",
       description: "Developing green technologies for renewable energy and environmental conservation.",
-      image: "https://images.unsplash.com/photo-1766297248084-b32bacb4a1e4?w=1080&q=80",
-      color: "#14B8A6"
+      image: "../../public/Screenshot 2026-02-01 061912.png",
+      color: "#edd437"
     },
     {
       title: "Digital Transformation",
       description: "Exploring blockchain, IoT, and Industry 4.0 for next-generation businesses.",
-      image: "https://images.unsplash.com/photo-1766297247287-9bf80d5f8281?w=1080&q=80",
-      color: "#1E40AF"
+      image: "../public/Screenshot 2026-02-01 061943.png",
+     color: "#e86195"
     },
     {
       title: "Entrepreneurship Studies",
       description: "Analyzing startup ecosystems and venture development strategies.",
-      image: "https://images.unsplash.com/photo-1605781231474-f60dea478e8a?w=1080&q=80",
-      color: "#EA580C"
+      image: "../../public/Screenshot 2026-02-01 062001.png",
+      color: "#ec2626"
     }
   ];
 
   return (
-    <section className="py-32 px-6 lg:px-12 bg-background" ref={ref}>
+    <section className="py-5 px-6 lg:px-12 bg-background" ref={ref}>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,15 +60,16 @@ export default function ResearchCards() {
               className="group"
             >
               <div className="h-full border border-border bg-card overflow-hidden hover:shadow-2xl transition-all duration-300">
-                <div className="h-56 overflow-hidden relative">
+                <div className="h-48 bg-white flex items-center justify-center relative">
+
                   <div 
-                    className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity"
-                    style={{ backgroundColor: card.color }}
+                    className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity"
+                    // style={{ backgroundColor: card.color }}
                   ></div>
                   <img 
                     src={card.image}
                     alt={card.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="max-h-full max-w-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6">
