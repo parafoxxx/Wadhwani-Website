@@ -12,12 +12,12 @@ export default function Gallery() {
 
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1763277211600-e726e224c5ae?w=1080&q=80",
+      url: "../../public/Screenshot 2026-02-01 070456.png",
       caption: "IIT Kanpur Campus",
       category: "Campus"
     },
     {
-      url: "https://images.unsplash.com/photo-1766297248084-b32bacb4a1e4?w=1080&q=80",
+      url: "../../public/lab.jpg",
       caption: "Advanced Research Laboratory",
       category: "Research"
     },
@@ -87,7 +87,7 @@ export default function Gallery() {
         >
           <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4">Gallery</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
-            Life at Wadhwani Institute
+            Glismpes
           </h2>
           <p className="text-lg opacity-90 max-w-3xl">
             A glimpse into our vibrant academic environment, research facilities, and collaborative spaces.

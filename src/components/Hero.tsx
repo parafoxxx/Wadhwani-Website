@@ -11,7 +11,7 @@ export default function Hero() {
     "../../public/screenshot 2026-02-01 070356.png",
     "../../public/screenshot 2026-02-01 070413.png",
     "../../public/screenshot 2026-02-01 070456.png",
-    "../../public/screenshot 2026-02-01 062001.png"
+    "../../public/bsbe.jpg"
   ];
   const gold="c9a24d"
 

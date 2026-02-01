@@ -31,7 +31,7 @@ export default function About() {
           <div>
             <div className="h-80 mb-6 overflow-hidden">
               <img
-                src="/wadh1.png"
+                src="../../public/screenshot 2026-02-01 070356.png"
                 alt="IIT Kanpur Campus"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -70,7 +70,7 @@ export default function About() {
 
             <div className="h-80 mt-6 overflow-hidden">
               <img
-                src="../../public/wadh2.png"
+                src="../../public/bsbe.jpg"
                 alt="Research Facility"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
