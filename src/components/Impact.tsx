@@ -91,30 +91,36 @@ export default function Impact() {
                 Measurable Outcomes
               </h3>
               <p className="text-lg opacity-90 leading-relaxed mb-8">
-                Our initiatives have resulted in significant technology transfers, patent filings, 
-                startup successes, and policy contributions that shape India's innovation landscape.
+                WCTRI builds on IIT Kanpur’s established track record in translational research and innovation, reflected through sustained technology transfer, startup creation, and large-scale funded research initiatives.
               </p>
-              <div className="grid grid-cols-3 gap-8">
+              <div className="grid grid-cols-4 gap-12">
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="font-mono text-3xl font-bold text-accent mb-1">₹50Cr+</div>
-                  <div className="text-sm opacity-80">Funding Secured</div>
+                  <div className="font-mono text-3xl font-bold text-accent mb-1">₹40+Cr</div>
+                  <div className="text-sm opacity-80">Committed Funding Support</div>
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="font-mono text-3xl font-bold text-accent mb-1">30+</div>
-                  <div className="text-sm opacity-80">Patents Filed</div>
+                  <div className="font-mono text-3xl font-bold text-accent mb-1">150+</div>
+                  <div className="text-sm opacity-80">Startups Incubated</div>
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="font-mono text-3xl font-bold text-accent mb-1">15+</div>
-                  <div className="text-sm opacity-80">Ventures Launched</div>
+                  <div className="font-mono text-3xl font-bold text-accent mb-1">100+</div>
+                  <div className="text-sm opacity-80">Patents Granted</div>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <div className="font-mono text-3xl font-bold text-accent mb-1">20+</div>
+                  <div className="text-sm opacity-80">Healthcare Technologies Commercialized</div>
                 </motion.div>
               </div>
             </div>
