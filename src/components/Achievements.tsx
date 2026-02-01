@@ -10,27 +10,27 @@ export default function Achievements() {
 
   const achievements = [
     {
-      title: "Global Recognition",
-      description: "Ranked among India's top innovation centers by NIRF",
-      stat: "#5",
-      color: "#0D9488"
+      title: "Innovation Excellence",
+      description: "Ranked No. 1 in Innovation in India Rankings 2023, reflecting IIT Kanpur’s leadership in translational research and technology development.",
+      stat: "#1",
+      color: "#96c625"
     },
     {
-      title: "Research Excellence",
-      description: "Over 200 publications in top-tier international journals",
-      stat: "200+",
+      title: "Technologies Commercialized",
+      description: "Over 20 healthcare and life-science technologies commercialized through industry licensing and technology transfer initiatives.",
+      stat: "20+",
       color: "#C9A24D"
     },
     {
-      title: "Industry Impact",
-      description: "Successfully incubated 45+ technology startups",
-      stat: "45+",
+      title: "Patents Granted",
+      description: "More than 100 patents granted, with strong emphasis on life sciences, healthcare technologies, and translational research outcomes.",
+      stat: "100+",
       color: "#1E40AF"
     },
     {
-      title: "Global Reach",
-      description: "Partnerships with 30+ institutions across 15 countries",
-      stat: "30+",
+      title: "Startup Impact",
+      description: "Over 150 startups incubated and graduated across healthcare, artificial intelligence, cybersecurity, agritech, cleantech, and engineering domains through IIT Kanpur’s incubation ecosystem.",
+      stat: "150+",
       color: "#EA580C"
     }
   ];
