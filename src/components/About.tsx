@@ -24,7 +24,7 @@ export default function About() {
         >
           <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4">About</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-8">
-            Building Tomorrow's Leaders
+            Innovation Through Translation
           </h2>
         </motion.div>
 
@@ -43,25 +43,21 @@ export default function About() {
               />
             </div>
             <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+              <br />
               <p>
-                Established as a center of excellence within IIT Kanpur, the Wadhwani Institute 
-                represents a commitment to advancing knowledge, fostering innovation, and developing 
-                leadership capabilities that address the most pressing challenges of our time.
+               WCTRI adopts an interdisciplinary approach that integrates engineering, biotechnology, artificial intelligence, and entrepreneurship to strengthen the translation of research into practical solutions.
               </p>
               <p>
-                Through rigorous research, transformative education, and meaningful industry engagement, 
-                we cultivate an ecosystem where ideas flourish and impact is measurable.
+                Located within one of India’s leading research institutions, the center leverages world-class infrastructure, established research ecosystems, and strong industry linkages to support innovation that meets national and global standards.
               </p>
             </div>
           </div>
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              Our interdisciplinary approach bridges technology, management, and entrepreneurship, 
-              creating pathways for scholars, executives, and entrepreneurs to collaborate and innovate.
+              Established at the Indian Institute of Technology Kanpur, the Wadhwani Center for Translational Research and Innovation (WCTRI) aims to become a national leader in translational research and technology commercialization. The center is envisioned as a long-term initiative that fosters collaboration between academia, industry, startups, and policymakers.
             </p>
             <p>
-              Located at one of India's premier institutes, we leverage world-class infrastructure 
-              and a distinguished faculty to deliver programs that meet international standards.
+              WCTRI emphasizes responsible innovation aligned with national priorities such as Make in India and Atmanirbhar Bharat, ensuring that scientific breakthroughs are transformed into deployable, scalable, and sustainable solutions.
             </p>
             <div className="h-80 mt-6 overflow-hidden">
               <img 
