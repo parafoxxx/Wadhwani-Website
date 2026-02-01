@@ -8,10 +8,10 @@ export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const backgroundImages = [
-    "https://images.unsplash.com/photo-1763277211600-e726e224c5ae?w=1920&q=80",
-    "https://images.unsplash.com/photo-1602052294200-a8b75e03adfe?w=1920&q=80",
-    "https://images.unsplash.com/photo-1762075314731-10fa03d2727a?w=1920&q=80",
-    "https://images.unsplash.com/photo-1766297248084-b32bacb4a1e4?w=1920&q=80"
+    "../../public/screenshot 2026-02-01 070356.png",
+    "../../public/screenshot 2026-02-01 070413.png",
+    "../../public/screenshot 2026-02-01 070456.png",
+    "../../public/screenshot 2026-02-01 062001.png"
   ];
   const gold="c9a24d"
 
