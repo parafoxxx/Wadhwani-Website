@@ -12,12 +12,12 @@ export default function Gallery() {
 
   const images = [
     {
-      url: "../../public/Screenshot 2026-02-01 070456.png",
+      url: "/Screenshot 2026-02-01 070456.png",
       caption: "IIT Kanpur Campus",
       category: "Campus"
     },
     {
-      url: "../../public/lab.jpg",
+      url: "/lab.jpg",
       caption: "Bioengineering Laboratories",
       category: "Bioengineering"
     },

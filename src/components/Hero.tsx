@@ -8,10 +8,10 @@ export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const backgroundImages = [
-    "../../public/screenshot 2026-02-01 070356.png",
-    "../../public/screenshot 2026-02-01 070413.png",
-    "../../public/screenshot 2026-02-01 070456.png",
-    "../../public/bsbe.jpg"
+    "/Screenshot 2026-02-01 070356.png",
+    "/Screenshot 2026-02-01 070413.png",
+    "/Screenshot 2026-02-01 070456.png",
+    "/bsbe.jpg"
   ];
   const gold="c9a24d"
 

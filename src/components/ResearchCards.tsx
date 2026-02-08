@@ -10,26 +10,26 @@ export default function ResearchCards() {
     {
       title: "AI in Healthcare & Biomedical Research",
       description: "AI-enabled diagnostics, decision support, and translational analytics for healthcare and biomedical research.",
-      image: "../../public/Screenshot 2026-02-01 061855.png",
+      image: "/Screenshot 2026-02-01 061855.png",
       color: "#723a3a"
       
     },
     {
       title: "Bioengineering & Regenerative Medicine",
       description: "Therapeutics and regenerative solutions for lifestyle diseases, neurodegeneration, and tissue repair.",
-      image: "../../public/Screenshot 2026-02-01 061912.png",
+      image: "/Screenshot 2026-02-01 061912.png",
       color: "#edd437"
     },
     {
       title: "HealthTech & Medical Device Innovations",
       description: "Translational devices, diagnostics, and validation studies focused on clinical impact.",
-      image: "../public/Screenshot 2026-02-01 061943.png",
+      image: "/Screenshot 2026-02-01 061943.png",
      color: "#e86195"
     },
     {
       title: "Synthetic Biology & Biomanufacturing",
       description: "Platform technologies and scalable biomanufacturing for next-generation therapeutics.",
-      image: "../../public/Screenshot 2026-02-01 062001.png",
+      image: "/Screenshot 2026-02-01 062001.png",
       color: "#ec2626"
     }
   ];
