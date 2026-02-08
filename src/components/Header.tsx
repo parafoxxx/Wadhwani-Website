@@ -1,12 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,10 +19,18 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  // Helper to scroll or navigate+scroll
+  const handleNav = (id: string) => {
+    if (location.pathname === "/") {
+      // Already on home, just scroll
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setMobileMenuOpen(false);
+      }
+    } else {
+      // Navigate to home, then scroll after navigation
+      navigate("/", { state: { scrollTo: id } });
       setMobileMenuOpen(false);
     }
   };
@@ -43,7 +54,6 @@ export default function Header() {
               className="text-xl font-serif font-semibold tracking-tight text-primary hover:text-accent transition-colors"
             >
               <img src="/image.png" alt="Wadhwani Center of Excellence" className="h-12 w-auto sm:h-16 md:h-20 inline-block mr-2" />
-
             </button>
 
             {/* Desktop Navigation */}
@@ -51,7 +61,7 @@ export default function Header() {
               {navItems.map((item) => (
                 <button
                   key={item}
-                  onClick={() => scrollToSection(item)}
+                  onClick={() => handleNav(item)}
                   className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors capitalize"
                 >
                   {item}
@@ -59,7 +69,7 @@ export default function Header() {
               ))}
               <ThemeToggle />
               <button
-                onClick={() => window.open("mailto:foundationwadhwaniiitk@gmail.com", "_blank")}
+                onClick={() => navigate("/contact")}
                 className="px-4 py-2 bg-accent text-accent-foreground text-sm font-medium hover:bg-accent/90 transition-colors"
               >
                 Contact
@@ -67,7 +77,7 @@ export default function Header() {
             </nav>
 
             {/* Mobile Menu Button */}
-                      <div className="md:hidden flex items-center gap-3">
+            <div className="md:hidden flex items-center gap-3">
               <ThemeToggle />
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -83,7 +93,6 @@ export default function Header() {
         </div>
       </motion.header>
 
-
       {/* Mobile Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
@@ -98,7 +107,7 @@ export default function Header() {
               {navItems.map((item) => (
                 <button
                   key={item}
-                  onClick={() => scrollToSection(item)}
+                  onClick={() => handleNav(item)}
                   className="text-left text-lg font-medium text-muted-foreground hover:text-primary transition-colors capitalize py-2"
                 >
                   {item}
@@ -106,7 +115,7 @@ export default function Header() {
               ))}
               <button
                 onClick={() => {
-                  window.open("mailto:foundationwadhwaniiitk@gmail.com", "_blank");
+                  navigate("/contact");
                   setMobileMenuOpen(false);
                 }}
                 className="px-4 py-3 bg-accent text-accent-foreground font-medium hover:bg-accent/90 transition-colors text-left"
