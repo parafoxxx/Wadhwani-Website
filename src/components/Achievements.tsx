@@ -10,26 +10,26 @@ export default function Achievements() {
 
   const achievements = [
     {
-      title: "Innovation Excellence",
-      description: "Ranked No. 1 in Innovation in India Rankings 2023, reflecting IIT Kanpur’s leadership in translational research and technology development.",
-      stat: "#1",
+      title: "Externally Funded Projects",
+      description: "1483 ongoing externally funded projects with a total sanctioned amount of Rs. 1449 crores.",
+      stat: "1483",
       color: "#96c625"
     },
     {
-      title: "Technologies Commercialized",
-      description: "Over 20 healthcare and life-science technologies commercialized through industry licensing and technology transfer initiatives.",
-      stat: "20+",
+      title: "IPR Filings (2022-23)",
+      description: "114 patents and intellectual property filings during the 2022-2023 period.",
+      stat: "114",
       color: "#C9A24D"
     },
     {
-      title: "Patents Granted",
-      description: "More than 100 patents granted, with strong emphasis on life sciences, healthcare technologies, and translational research outcomes.",
-      stat: "100+",
+      title: "Patents Granted & Commercialized",
+      description: "100+ patents granted and 21 commercialized, with 200 life-sciences and med-tech patents among 1000+ filings.",
+      stat: "100+ / 21",
       color: "#1E40AF"
     },
     {
-      title: "Startup Impact",
-      description: "Over 150 startups incubated and graduated across healthcare, artificial intelligence, cybersecurity, agritech, cleantech, and engineering domains through IIT Kanpur’s incubation ecosystem.",
+      title: "Startups Graduated",
+      description: "150+ startups graduated through SIIC across healthcare, agritech, cleantech, AI, ML, and cybersecurity domains.",
       stat: "150+",
       color: "#EA580C"
     }
@@ -43,7 +43,7 @@ export default function Achievements() {
   }, [achievements.length]);
 
   return (
-    <section className="py-32 px-6 lg:px-12 bg-gradient-to-br from-[#0B1F3B] via-[#0D9488] to-[#0B1F3B] text-white overflow-hidden" ref={ref}>
+    <section className="py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-gradient-to-br from-[#0B1F3B] via-[#0D9488] to-[#0B1F3B] text-white overflow-hidden" ref={ref}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

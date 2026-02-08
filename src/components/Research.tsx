@@ -8,46 +8,46 @@ export default function Research() {
 
   const domains = [
     {
-      title: "Artificial Intelligence & Machine Learning",
-      description: "Advancing the frontiers of intelligent systems, deep learning architectures, and ethical AI frameworks for real-world applications.",
+      title: "Bioengineering & Biotech (Therapeutics)",
+      description: "Lifestyle diseases, neurodegenerative disorders, mental health, regenerative therapies, drug delivery, antivirals, and antimicrobial resistance.",
     },
     {
-      title: "Sustainable Technology & Energy Systems",
-      description: "Developing innovative solutions for renewable energy, smart grids, and environmentally conscious engineering practices.",
+      title: "AI for Healthcare & Biomedical Research",
+      description: "AI-driven diagnostics and translational analytics to accelerate healthcare innovation and personalized therapies.",
     },
     {
-      title: "Digital Transformation & Innovation",
-      description: "Exploring emerging technologies, digital business models, and organizational change in the context of Industry 4.0.",
+      title: "AI for Cybersecurity & Digital Public Infrastructure",
+      description: "AI-enabled governance and security for digital public infrastructure and mission-critical systems.",
     },
     {
-      title: "Entrepreneurship & Venture Development",
-      description: "Investigating startup ecosystems, venture financing, and the dynamics of high-growth entrepreneurial ventures.",
+      title: "AI for Agriculture & Energy",
+      description: "Applied AI for agriculture productivity, energy systems, and sustainability-focused operations.",
     },
     {
-      title: "Operations & Supply Chain Excellence",
-      description: "Advancing research in logistics optimization, supply chain resilience, and operational efficiency methodologies.",
+      title: "AI for Mobility, Supply Chain & Infrastructure",
+      description: "AI applications for mobility, infrastructure resilience, and supply-chain optimization.",
     },
     {
-      title: "Financial Engineering & Risk Management",
-      description: "Developing quantitative models, risk assessment frameworks, and financial innovation strategies for complex markets.",
+      title: "Translational Validation & Commercialization",
+      description: "TRL 4+ technologies, validation studies for devices and diagnostics, and pathways from lab to market.",
     },
   ];
 
   return (
-    <section id="research" className="py-15 px-6 lg:px-12 bg-background" ref={ref}>
+    <section id="research" className="py-20 md:py-28 px-5 sm:px-6 lg:px-12 bg-background" ref={ref}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4">Research</p>
+          <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4">Focus Areas</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-            Domains of Inquiry
+            WCTRI Research Priorities
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mb-16">
-            Our research spans multiple disciplines, addressing fundamental questions and practical challenges 
-            through rigorous methodologies and collaborative investigation.
+            WCTRI at IIT Kanpur concentrates on bioengineering, biotechnology, and artificial intelligence
+            with a strong translational pathway from research to commercialization.
           </p>
         </motion.div>
 

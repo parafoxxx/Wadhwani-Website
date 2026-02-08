@@ -8,21 +8,33 @@ export default function Partnerships() {
 
   const partners = [
     {
-      category: "Global Universities",
-      institutions: ["MIT", "Stanford University", "Oxford University", "ETH Zurich"],
+      category: "Founding Partner",
+      institutions: ["Wadhwani Foundation"],
     },
     {
-      category: "Industry Leaders",
-      institutions: ["Tata Group", "Infosys", "Reliance Industries", "Microsoft"],
+      category: "IITK Ecosystem Centers",
+      institutions: [
+        "Gangwal School of Medical Sciences and Technology (GSMST)",
+        "Med Tech Innovation Ecosystem",
+        "National Centre for Flexible Electronics (FlexE)",
+        "C3i Hub",
+        "Centre for Development of Intelligent Systems (CDIS)",
+        "Startup Incubation and Innovation Centre (SIIC)"
+      ],
     },
     {
-      category: "Government Bodies",
-      institutions: ["NITI Aayog", "Department of Science & Technology", "MEITY"],
+      category: "Research Infrastructure",
+      institutions: [
+        "Central Experimental Animal Facility (CEAF)",
+        "Biological Sciences and Bioengineering (BSBE)",
+        "Chemistry Department",
+        "Computer Science and Engineering (CSE)"
+      ],
     },
   ];
 
   return (
-    <section id="partnerships" className="py-32 px-6 lg:px-12 bg-background" ref={ref}>
+    <section id="partnerships" className="py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-background" ref={ref}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,11 +43,11 @@ export default function Partnerships() {
         >
           <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4">Partnerships</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-            Global Collaborations
+            Ecosystem Partnerships
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mb-16">
-            We maintain strategic partnerships with leading universities, corporations, and 
-            government organizations to amplify our impact and facilitate knowledge exchange.
+            WCTRI is anchored by the Wadhwani Foundation and embedded in the IIT Kanpur ecosystem,
+            leveraging institutional centers and shared research infrastructure.
           </p>
         </motion.div>
 

@@ -18,38 +18,38 @@ export default function Gallery() {
     },
     {
       url: "../../public/lab.jpg",
-      caption: "Advanced Research Laboratory",
-      category: "Research"
+      caption: "Bioengineering Laboratories",
+      category: "Bioengineering"
     },
     {
       url: "https://images.unsplash.com/photo-1758691736821-f1a600c0c3f1?w=1080&q=80",
-      caption: "Executive Education Session",
-      category: "Education"
+      caption: "WIN CoE Collaboration Sessions",
+      category: "WIN CoE"
     },
     {
       url: "https://images.unsplash.com/photo-1758549885423-819fd86e04f0?w=1080&q=80",
-      caption: "Technology Innovation Hub",
+      caption: "Technology Translation Hub",
       category: "Innovation"
     },
     {
       url: "https://images.unsplash.com/photo-1766297247287-9bf80d5f8281?w=1080&q=80",
-      caption: "Collaborative Research",
-      category: "Research"
+      caption: "Interdisciplinary Research Teams",
+      category: "Collaboration"
     },
     {
       url: "https://images.unsplash.com/photo-1605781231474-f60dea478e8a?w=1080&q=80",
-      caption: "Student Research Projects",
+      caption: "Student Translational Projects",
       category: "Students"
     },
     {
       url: "https://images.unsplash.com/photo-1646066490017-c935b1a1eb0f?w=1080&q=80",
-      caption: "Strategic Planning Session",
+      caption: "Program Planning Workshop",
       category: "Leadership"
     },
     {
       url: "https://images.unsplash.com/photo-1762075314731-10fa03d2727a?w=1080&q=80",
-      caption: "Academic Excellence",
-      category: "Campus"
+      caption: "Innovation Ecosystem",
+      category: "Ecosystem"
     }
   ];
 
@@ -77,7 +77,7 @@ export default function Gallery() {
   };
 
   return (
-    <section id="gallery" className="py-32 px-6 lg:px-12 bg-primary text-primary-foreground overflow-hidden" ref={ref}>
+    <section id="gallery" className="py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-primary text-primary-foreground overflow-hidden" ref={ref}>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -87,10 +87,10 @@ export default function Gallery() {
         >
           <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4">Gallery</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
-            Glismpes
+            Glimpses
           </h2>
           <p className="text-lg opacity-90 max-w-3xl">
-            A glimpse into our vibrant academic environment, research facilities, and collaborative spaces.
+            A glimpse into WCTRI labs, translational programs, and the IIT Kanpur innovation ecosystem.
           </p>
         </motion.div>
 
@@ -101,7 +101,7 @@ export default function Gallery() {
               className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-accent text-accent-foreground w-12 h-12 flex items-center justify-center hover:bg-accent/90 transition-colors"
               aria-label="Scroll left"
             >
-              ←
+              {"<"}
             </button>
           )}
           {canScrollRight && (
@@ -110,7 +110,7 @@ export default function Gallery() {
               className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-accent text-accent-foreground w-12 h-12 flex items-center justify-center hover:bg-accent/90 transition-colors"
               aria-label="Scroll right"
             >
-              →
+              {">"}
             </button>
           )}
 

@@ -42,7 +42,7 @@ export default function Header() {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="text-xl font-serif font-semibold tracking-tight text-primary hover:text-accent transition-colors"
             >
-              <img src="/image.png"  alt="Wadhwani Center of Excellence" className="h-20 w-80 inline-block mr-2" />
+              <img src="/image.png" alt="Wadhwani Center of Excellence" className="h-12 w-auto sm:h-16 md:h-20 inline-block mr-2" />
 
             </button>
 
@@ -59,7 +59,7 @@ export default function Header() {
               ))}
               <ThemeToggle />
               <button
-                onClick={() => window.open("mailto:contact@iitk.ac.in", "_blank")}
+                onClick={() => window.open("mailto:foundationwadhwaniiitk@gmail.com", "_blank")}
                 className="px-4 py-2 bg-accent text-accent-foreground text-sm font-medium hover:bg-accent/90 transition-colors"
               >
                 Contact
@@ -106,7 +106,7 @@ export default function Header() {
               ))}
               <button
                 onClick={() => {
-                  window.open("mailto:contact@iitk.ac.in", "_blank");
+                  window.open("mailto:foundationwadhwaniiitk@gmail.com", "_blank");
                   setMobileMenuOpen(false);
                 }}
                 className="px-4 py-3 bg-accent text-accent-foreground font-medium hover:bg-accent/90 transition-colors text-left"

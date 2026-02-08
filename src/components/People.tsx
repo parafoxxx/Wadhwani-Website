@@ -8,39 +8,39 @@ export default function People() {
 
   const leadership = [
     {
-      name: "Prof. Rajesh Sharma",
-      title: "Director",
-      expertise: "Innovation Strategy, Technology Management",
+      name: "Prof. Ashok Kumar",
+      title: "CoE Coordinator, WCTRI (BSBE)",
+      expertise: "Coordinates CoE activities, monitors research progress, and reports to the Wadhwani Foundation.",
     },
     {
-      name: "Prof. Anita Mehta",
-      title: "Head of Research",
-      expertise: "Artificial Intelligence, Data Science",
+      name: "Dr. Sandeep Verma",
+      title: "Program Co-coordinator, Bioengineering & Biotech",
+      expertise: "Leads the bioengineering and biotech focus area and WIN project coordination.",
     },
     {
-      name: "Prof. Vikram Patel",
-      title: "Head of Executive Education",
-      expertise: "Leadership Development, Organizational Behavior",
+      name: "Dr. Tushar Sandhan",
+      title: "Program Co-coordinator, Artificial Intelligence",
+      expertise: "Leads the AI focus area and WIN project coordination.",
     },
     {
-      name: "Dr. Priya Desai",
-      title: "Head of Entrepreneurship",
-      expertise: "Venture Capital, Startup Ecosystems",
+      name: "Program Managers (2 per theme)",
+      title: "Program Managers",
+      expertise: "Portfolio execution, investigator coordination, reporting, and seed-funding outreach.",
     },
     {
-      name: "Prof. Arun Kumar",
-      title: "Distinguished Fellow",
-      expertise: "Operations Research, Supply Chain Management",
+      name: "Communication & Outreach Manager",
+      title: "Partnerships and Outreach",
+      expertise: "Stakeholder engagement, workshops, and national and international collaboration networks.",
     },
     {
-      name: "Dr. Meera Singh",
-      title: "Research Fellow",
-      expertise: "Sustainable Technology, Energy Systems",
+      name: "Support Staff",
+      title: "Operations Support",
+      expertise: "Records maintenance, office support, and operational coordination.",
     },
   ];
 
   return (
-    <section id="people" className="py-32 px-6 lg:px-12 bg-card" ref={ref}>
+    <section id="people" className="py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-card" ref={ref}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -49,11 +49,11 @@ export default function People() {
         >
           <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4">People</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-            Faculty & Leadership
+            Leadership & Coordination
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mb-16">
-            Our distinguished faculty bring deep expertise, global perspectives, and a commitment 
-            to excellence in teaching, research, and mentorship.
+            WCTRI is led by IIT Kanpur faculty and program coordinators supported by dedicated
+            program management and outreach roles.
           </p>
         </motion.div>
 

@@ -8,34 +8,34 @@ export default function ResearchCards() {
 
   const cards = [
     {
-      title: "AI & Machine Learning",
-      description: "Pushing boundaries in neural networks, computer vision, and natural language processing.",
+      title: "AI in Healthcare & Biomedical Research",
+      description: "AI-enabled diagnostics, decision support, and translational analytics for healthcare and biomedical research.",
       image: "../../public/Screenshot 2026-02-01 061855.png",
       color: "#723a3a"
       
     },
     {
-      title: "Sustainable Innovation",
-      description: "Developing green technologies for renewable energy and environmental conservation.",
+      title: "Bioengineering & Regenerative Medicine",
+      description: "Therapeutics and regenerative solutions for lifestyle diseases, neurodegeneration, and tissue repair.",
       image: "../../public/Screenshot 2026-02-01 061912.png",
       color: "#edd437"
     },
     {
-      title: "Digital Transformation",
-      description: "Exploring blockchain, IoT, and Industry 4.0 for next-generation businesses.",
+      title: "HealthTech & Medical Device Innovations",
+      description: "Translational devices, diagnostics, and validation studies focused on clinical impact.",
       image: "../public/Screenshot 2026-02-01 061943.png",
      color: "#e86195"
     },
     {
-      title: "Entrepreneurship Studies",
-      description: "Analyzing startup ecosystems and venture development strategies.",
+      title: "Synthetic Biology & Biomanufacturing",
+      description: "Platform technologies and scalable biomanufacturing for next-generation therapeutics.",
       image: "../../public/Screenshot 2026-02-01 062001.png",
       color: "#ec2626"
     }
   ];
 
   return (
-    <section className="py-5 px-6 lg:px-12 bg-background" ref={ref}>
+    <section className="py-12 md:py-20 px-5 sm:px-6 lg:px-12 bg-background" ref={ref}>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ export default function ResearchCards() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4">Featured Research</p>
+          <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4">Featured Focus Areas</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
             Innovation in Action
           </h2>
