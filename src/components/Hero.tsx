@@ -102,13 +102,17 @@ export default function Hero() {
             Our Programs
           </button>
           <button 
-             onMouseEnter={(e) => {
-    e.currentTarget.style.backgroundColor = "#e68c63";
-  }}
-  onMouseLeave={(e=> {
-    e.currentTarget.style.backgroundColor = "#f2682a";
-  })}
-            onClick={() => window.open("mailto:contact@iitk.ac.in", "_blank")}
+  //            onMouseEnter={(e) => {
+  //   e.currentTarget.style.backgroundColor = "#e68c63";
+  // }}
+  // onMouseLeave={(e=> {
+  //   e.currentTarget.style.backgroundColor = "#f2682a";
+  // })}
+  //           onClick={() => window.open("mailto:contact@iitk.ac.in", "_blank")}
+          onClick={() => {
+              // Navigate to Contact page
+              window.location.href = "/contact";
+            }}
             className="px-8 py-3 bg-accent text-accent-foreground font-medium hover:bg-accent/90 transition-colors w-full sm:w-auto"
           >
             Contact Us
