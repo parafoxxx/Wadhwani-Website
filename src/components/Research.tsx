@@ -15,18 +15,7 @@ export default function Research() {
       title: "AI for Healthcare & Biomedical Research",
       description: "AI-driven diagnostics and translational analytics to accelerate healthcare innovation and personalized therapies.",
     },
-    {
-      title: "AI for Cybersecurity & Digital Public Infrastructure",
-      description: "AI-enabled governance and security for digital public infrastructure and mission-critical systems.",
-    },
-    {
-      title: "AI for Agriculture & Energy",
-      description: "Applied AI for agriculture productivity, energy systems, and sustainability-focused operations.",
-    },
-    {
-      title: "AI for Mobility, Supply Chain & Infrastructure",
-      description: "AI applications for mobility, infrastructure resilience, and supply-chain optimization.",
-    },
+    
     {
       title: "Translational Validation & Commercialization",
       description: "TRL 4+ technologies, validation studies for devices and diagnostics, and pathways from lab to market.",
@@ -34,7 +23,7 @@ export default function Research() {
   ];
 
   return (
-    <section id="research" className="py-20 md:py-28 px-5 sm:px-6 lg:px-12 bg-background" ref={ref}>
+    <section id="research" className="surface-gradient py-20 md:py-28 px-5 sm:px-6 lg:px-12 bg-background" ref={ref}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,15 +40,21 @@ export default function Research() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-1 gap-12">
           {domains.map((domain, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="border-l-2 border-accent pl-6 py-2"
+              className="relative pl-6 py-2"
             >
+              <motion.div
+                initial={{ scaleY: 0, transformOrigin: "top" }}
+                animate={isInView ? { scaleY: 1 } : {}}
+                transition={{ duration: 0.45, delay: index * 0.1 + 0.2 }}
+                className="absolute left-0 top-2 bottom-2 w-0.5 bg-accent"
+              />
               <h3 className="text-xl font-serif font-semibold text-primary mb-3">
                 {domain.title}
               </h3>

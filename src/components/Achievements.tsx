@@ -13,25 +13,25 @@ export default function Achievements() {
       title: "Externally Funded Projects",
       description: "1483 ongoing externally funded projects with a total sanctioned amount of Rs. 1449 crores.",
       stat: "1483",
-      color: "#96c625"
+      color: "#BF2026"
     },
     {
       title: "IPR Filings (2022-23)",
       description: "114 patents and intellectual property filings during the 2022-2023 period.",
       stat: "114",
-      color: "#C9A24D"
+      color: "#F68721"
     },
     {
       title: "Patents Granted & Commercialized",
       description: "100+ patents granted and 21 commercialized, with 200 life-sciences and med-tech patents among 1000+ filings.",
       stat: "100+ / 21",
-      color: "#1E40AF"
+      color: "#414042"
     },
     {
       title: "Startups Graduated",
       description: "150+ startups graduated through SIIC across healthcare, agritech, cleantech, AI, ML, and cybersecurity domains.",
       stat: "150+",
-      color: "#EA580C"
+      color: "#C61629"
     }
   ];
 
@@ -43,7 +43,7 @@ export default function Achievements() {
   }, [achievements.length]);
 
   return (
-    <section className="py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-gradient-to-br from-[#0B1F3B] via-[#0D9488] to-[#0B1F3B] text-white overflow-hidden" ref={ref}>
+    <section className="py-20 md:py-24 px-5 sm:px-6 lg:px-12 bg-gradient-to-br from-[#BF2026] via-[#F68721] to-[#414042] text-white overflow-hidden" ref={ref}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ export default function Achievements() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-wider text-[#C9A24D] font-medium mb-4">Achievements</p>
+          <p className="text-sm uppercase tracking-wider text-[#F68721] font-medium mb-4">Achievements</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
             Excellence in Numbers
           </h2>
@@ -95,7 +95,7 @@ export default function Achievements() {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                currentIndex === index ? "bg-[#C9A24D] w-8" : "bg-white/30"
+                currentIndex === index ? "bg-[#F68721] w-8" : "bg-white/30"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />

@@ -47,13 +47,25 @@ export default function Header() {
           scrolled ? "bg-background/95 backdrop-blur-sm border-b border-border" : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex items-center justify-between h-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="flex items-center justify-between h-16 sm:h-20">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="text-xl font-serif font-semibold tracking-tight text-primary hover:text-accent transition-colors"
+              className="flex items-center gap-2 sm:gap-3 group min-w-0"
             >
-              <img src="/image.png" alt="Wadhwani Center of Excellence" className="h-12 w-auto sm:h-16 md:h-20 inline-block mr-2" />
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white/95 shadow-sm ring-1 ring-primary/10 transition-all group-hover:ring-primary/20 sm:h-14 sm:w-14">
+                <img
+                  src="/WWadhwani Center for Translational Research & Experience.png"
+                  alt="WCTRI IIT Kanpur logo"
+                  className="h-full w-full scale-[1.18] object-cover"
+                />
+              </span>
+
+              <span className="truncate text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-foreground transition-colors group-hover:text-primary sm:text-sm sm:tracking-[0.3em]">
+                <span className="font-black text-primary">Wadhwani</span>
+                <span className="mx-1 font-light text-muted-foreground">|</span>
+                <span className="font-medium text-foreground">IIT Kanpur</span>
+              </span>
             </button>
 
             {/* Desktop Navigation */}

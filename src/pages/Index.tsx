@@ -44,7 +44,6 @@ export default function Index() {
       <Research />
       <Programs />
       <Impact />
-      <Achievements />
       <Gallery />
       <People />
       <Partnerships />

@@ -1,6 +1,6 @@
 "use client";
 
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useInView } from "./useInView";
 
 export default function ResearchCards() {
@@ -11,31 +11,31 @@ export default function ResearchCards() {
       title: "AI in Healthcare & Biomedical Research",
       description: "AI-enabled diagnostics, decision support, and translational analytics for healthcare and biomedical research.",
       image: "/Screenshot 2026-02-01 061855.png",
-      color: "#723a3a"
+      color: "#BF2026"
       
     },
     {
       title: "Bioengineering & Regenerative Medicine",
       description: "Therapeutics and regenerative solutions for lifestyle diseases, neurodegeneration, and tissue repair.",
       image: "/Screenshot 2026-02-01 061912.png",
-      color: "#edd437"
+      color: "#F68721"
     },
     {
       title: "HealthTech & Medical Device Innovations",
       description: "Translational devices, diagnostics, and validation studies focused on clinical impact.",
       image: "/Screenshot 2026-02-01 061943.png",
-     color: "#e86195"
+     color: "#414042"
     },
     {
       title: "Synthetic Biology & Biomanufacturing",
       description: "Platform technologies and scalable biomanufacturing for next-generation therapeutics.",
       image: "/Screenshot 2026-02-01 062001.png",
-      color: "#ec2626"
+      color: "#E8412C"
     }
   ];
 
   return (
-    <section className="py-12 md:py-20 px-5 sm:px-6 lg:px-12 bg-background" ref={ref}>
+    <section className="surface-gradient py-12 md:py-20 px-5 sm:px-6 lg:px-12 bg-background" ref={ref}>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,12 +59,12 @@ export default function ResearchCards() {
               whileHover={{ y: -10 }}
               className="group"
             >
-              <div className="h-full border border-border bg-card overflow-hidden hover:shadow-2xl transition-all duration-300">
+              <div className="surface-gradient-soft h-full border border-transparent bg-card overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300">
                 <div className="h-48 bg-white flex items-center justify-center relative">
 
                   <div 
                     className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity"
-                    // style={{ backgroundColor: card.color }}
+                    style={{ backgroundColor: card.color }}
                   ></div>
                   <img 
                     src={card.image}

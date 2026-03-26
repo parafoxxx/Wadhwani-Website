@@ -1,8 +1,9 @@
 "use client";
 
 
-import { motion, styleEffect } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import DnaBackground from "./DnaBackground";
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -13,8 +14,6 @@ export default function Hero() {
     "/Screenshot 2026-02-01 070456.png",
     "/bsbe.jpg"
   ];
-  const gold="c9a24d"
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % backgroundImages.length);
@@ -49,9 +48,11 @@ export default function Hero() {
 
       {/* Background Blobs */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#0D9488] opacity-10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#C9A24D] opacity-10 rounded-full blur-3xl"></div>
+         <div className="absolute top-0 right-0 w-96 h-96 bg-[#BF2026] opacity-10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F68721] opacity-10 rounded-full blur-3xl"></div>
       </div>
+
+      <DnaBackground variant="hero" className="opacity-100" />
 
       {/* Image Progress Indicators */}
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 flex gap-2">
@@ -68,20 +69,22 @@ export default function Hero() {
       </div>
       
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        <motion.div
+         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight mb-8 text-balance">
-            Wadhwani Center for Translational <br /> Research & Innovation 
-              </h1>
+                    <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-8 text-balance tracking-tight">
+            Wadhwani Center for{" "}
+            <span className="text-primary">Translational Research</span>{" "}&amp;{" "}
+            <span className="text-accent">Innovation</span> {" "}</h2>
               <h4 className="font-serif text-4xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight mb-8 text-balance">
          IIT Kanpur
               </h4>
           <p className="text-lg md:text-.1xl text-muted-foreground max-w-5xl mx-auto leading-relaxed">
             The WIN Centre of Excellence (CoE) at IIT Kanpur, established in collaboration with the Wadhwani Foundation, aims at taking groundbreaking innovations in emerging technologies from research laboratory to commercialization aligning with National Health Missions. The promotes interdisciplinary solutions bridging biology, medicine, & engineering to address national & global challenges in healthcare & technology </p> 
         </motion.div>
+
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -91,7 +94,7 @@ export default function Hero() {
         >
           <button 
             onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-            className="px-8 py-3 bg-primary text-primary-foreground font-medium hover:bg-[#f6861f] transition-colors w-full sm:w-auto"
+           className="px-8 py-3 bg-primary text-primary-foreground font-semibold hover:bg-[#C61629] transition-colors w-full sm:w-auto"
           >
             Learn More
           </button>
@@ -102,13 +105,6 @@ export default function Hero() {
             Our Programs
           </button>
           <button 
-  //            onMouseEnter={(e) => {
-  //   e.currentTarget.style.backgroundColor = "#e68c63";
-  // }}
-  // onMouseLeave={(e=> {
-  //   e.currentTarget.style.backgroundColor = "#f2682a";
-  // })}
-  //           onClick={() => window.open("mailto:contact@iitk.ac.in", "_blank")}
           onClick={() => {
               // Navigate to Contact page
               window.location.href = "/contact";

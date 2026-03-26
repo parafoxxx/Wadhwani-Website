@@ -77,7 +77,8 @@ export default function Gallery() {
   };
 
   return (
-    <section id="gallery" className="py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-primary text-primary-foreground overflow-hidden" ref={ref}>
+    <section id="gallery" className="py-20 md:py-24 px-5 sm:px-6 lg:px-12 bg-[#ffffff] text-[#C61629] overflow-hidden relative" ref={ref}>
+      <div className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-[#F68721]/10 blur-3xl"></div>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -98,7 +99,7 @@ export default function Gallery() {
           {canScrollLeft && (
             <button
               onClick={() => scroll("left")}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-accent text-accent-foreground w-12 h-12 flex items-center justify-center hover:bg-accent/90 transition-colors"
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[#BF2026] text-white w-12 h-12 flex items-center justify-center hover:bg-[#C61629] transition-colors"
               aria-label="Scroll left"
             >
               {"<"}
@@ -107,7 +108,7 @@ export default function Gallery() {
           {canScrollRight && (
             <button
               onClick={() => scroll("right")}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-accent text-accent-foreground w-12 h-12 flex items-center justify-center hover:bg-accent/90 transition-colors"
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[#BF2026] text-white w-12 h-12 flex items-center justify-center hover:bg-[#C61629] transition-colors"
               aria-label="Scroll right"
             >
               {">"}
@@ -126,15 +127,16 @@ export default function Gallery() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -4, scale: 1.01 }}
                 className="flex-shrink-0 w-80 group"
               >
-                <div className="relative h-96 overflow-hidden bg-secondary">
+                <div className="relative h-96 overflow-hidden bg-[#414042] shadow-lg">
                   <img
                     src={image.url}
                     alt={image.caption}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#414042] via-[#414042]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <p className="text-xs uppercase tracking-wider text-accent font-medium mb-1">
                         {image.category}

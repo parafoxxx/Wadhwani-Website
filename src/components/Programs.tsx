@@ -13,7 +13,7 @@ export default function Programs() {
       description: "Rolling call announced on November 26, 2025. Supports technologies at TRL 4 or above, validated by publications, patents, grants, or test licenses, to move proof-of-concept toward commercialization.",
       duration: "TRL 4+ readiness",
       format: "Rolling call | IITK PI required",
-      color: "#0D9488",
+      color: "#BF2026",
       image: "https://images.unsplash.com/photo-1758691736821-f1a600c0c3f1?w=1080&q=80"
     },
     {
@@ -22,7 +22,7 @@ export default function Programs() {
       description: "Targets lifestyle diseases, neurodegeneration, mental health, regenerative therapies, drug delivery, antivirals, and antimicrobial resistance with high translational potential.",
       duration: "Long-term research",
       format: "Interdisciplinary | Translational",
-      color: "#C9A24D",
+      color: "#F68721",
       image: "https://images.unsplash.com/photo-1646066490017-c935b1a1eb0f?w=1080&q=80"
     },
     {
@@ -31,7 +31,7 @@ export default function Programs() {
       description: "AI applications for healthcare, agriculture, energy, cybersecurity, digital public infrastructure, mobility, and supply-chain systems.",
       duration: "Applied research",
       format: "Interdisciplinary | Applied",
-      color: "#1E40AF",
+      color: "#414042",
       image: "https://images.unsplash.com/photo-1766297248084-b32bacb4a1e4?w=1080&q=80"
     },
     {
@@ -40,7 +40,7 @@ export default function Programs() {
       description: "Supports spin-off startups with pre-seed networks, business strategy, product roadmap guidance, and industry-academia collaboration.",
       duration: "Spin-off support",
       format: "Industry-linked | SIIC ecosystem",
-      color: "#EA580C",
+      color: "#E8412C",
       image: "https://images.unsplash.com/photo-1605781231474-f60dea478e8a?w=1080&q=80"
     },
     {
@@ -49,13 +49,14 @@ export default function Programs() {
       description: "Builds researcher capacity through training, workshops, and national and international collaboration networks.",
       duration: "Continuous",
       format: "Workshops | Collaboration",
-      color: "#14B8A6",
+      color: "#C61629",
       image: "https://images.unsplash.com/photo-1743834147172-37c12011b321?w=1080&q=80"
     },
   ];
 
   return (
-    <section id="programs" className="py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-card" ref={ref}>
+    <section id="programs" className="surface-gradient-soft py-20 md:py-24 px-5 sm:px-6 lg:px-12 bg-card relative overflow-hidden" ref={ref}>
+      <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-[#F68721]/10 blur-3xl"></div>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -79,8 +80,8 @@ export default function Programs() {
               initial={{ opacity: 0, x: -30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ x: 10 }}
-              className="group border border-border bg-background overflow-hidden hover:shadow-2xl transition-all duration-300"
+              whileHover={{ x: 8, y: -2 }}
+              className="group surface-gradient border border-transparent bg-background overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300"
             >
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/3 h-64 md:h-auto relative overflow-hidden">
@@ -106,8 +107,7 @@ export default function Programs() {
                     >
                       {program.category}
                     </p>
-                    <h3 className="text-2xl font-serif font-semibold text-primary mb-3 group-hover:text-[#0D9488] transition-colors">
-                      {program.title}
+ <h3 className="text-2xl font-serif font-semibold text-primary mb-3 group-hover:text-accent transition-colors">                      {program.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-4">
                       {program.description}

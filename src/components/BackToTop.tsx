@@ -34,7 +34,7 @@ export default function BackToTop() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-primary text-primary-foreground flex items-center justify-center hover:bg-[#0D9488] transition-colors shadow-lg"
+          className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-primary text-primary-foreground flex items-center justify-center hover:bg-accent transition-colors shadow-lg"
           aria-label="Back to top"
         >
           <span className="text-xl">↑</span>

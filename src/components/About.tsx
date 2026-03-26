@@ -7,7 +7,7 @@ export default function About() {
   const [ref, isInView] = useInView({ threshold: 0.2 });
 
   return (
-    <section id="about" className="py-32 px-6 lg:px-12 bg-card" ref={ref}>
+    <section id="about" className="surface-gradient-soft py-20 md:py-24 px-6 lg:px-12 bg-card" ref={ref}>
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <motion.div
@@ -18,6 +18,12 @@ export default function About() {
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-8">
             About WCTRI at IIT Kanpur
           </h2>
+          <motion.div
+            initial={{ width: 0 }}
+            animate={isInView ? { width: 120 } : {}}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="h-1 bg-[#F68721] mb-10"
+          />
         </motion.div>
 
         {/* Content */}
@@ -29,7 +35,7 @@ export default function About() {
         >
           {/* Left Column */}
           <div>
-            <div className="h-80 mb-6 overflow-hidden">
+            <div className="h-80 mb-6 overflow-hidden shadow-md">
               <img
                 src="/Screenshot 2026-02-01 070356.png"
                 alt="IIT Kanpur Campus"
@@ -68,7 +74,7 @@ export default function About() {
               sustainable solutions.
             </p>
 
-            <div className="h-80 mt-6 overflow-hidden">
+            <div className="h-80 mt-6 overflow-hidden shadow-md">
               <img
                 src="/bsbe.jpg"
                 alt="Research Facility"

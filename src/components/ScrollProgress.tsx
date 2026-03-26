@@ -26,7 +26,7 @@ export default function ScrollProgress() {
       transition={{ duration: 0.3 }}
     >
       <motion.div
-        className="h-full bg-gradient-to-r from-[#0D9488] via-[#C9A24D] to-[#EA580C]"
+        className="h-full bg-gradient-to-r from-[#BF2026] via-[#F68721] to-[#F9B122]"
         style={{ width: `${scrollProgress}%` }}
         transition={{ duration: 0.1 }}
       />

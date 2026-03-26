@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"); */
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&family=Barlow+Condensed:wght@100;600;700&family=JetBrains+Mono:wght@100;500;600&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
@@ -11,11 +9,14 @@
   --font-sans:
     "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-heading:
+    "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-mono:
-    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Inter", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
   --font-serif:
-    "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    "Poppins", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -55,76 +56,83 @@
 }
 
 :root {
-  --radius: 0rem;
-  --background: #FAFAFA;
-  --foreground: #1A1A1A;
+  --radius: 0.24rem;
+  --background: #FFFFFF;
+  --foreground: #414042;
   --card: #FFFFFF;
-  --card-foreground: #1A1A1A;
+  --card-foreground: #414042;
   --popover: #FFFFFF;
-  --popover-foreground: #1A1A1A;
-  --primary: #0B1F3B;
-  --primary-foreground: #FAFAFA;
-  --secondary: #F5F5F5;
-  --secondary-foreground: #0B1F3B;
-  --muted: #E8E8E8;
-  --muted-foreground: #6B7280;
-  --accent: #f2682a;
-  --accent-foreground: #0B1F3B;
-  --destructive: #DC2626;
-  --border: #E5E5E5;
-  --input: #E5E5E5;
-  --ring: #f2682a;
-  --chart-1: #0B1F3B;
-  --chart-2: #f2682a;
-  --chart-3: #6B7280;
-  --chart-4: #1A1A1A;
-  --chart-5: #E8E8E8;
+  --popover-foreground: #414042;
+  /* Primary = Wadhwani Red #BF2026 */
+  --primary: #BF2026;
+  --primary-foreground: #FFFFFF;
+  /* Secondary = light warm gray */
+  --secondary: #F5F2F0;
+  --secondary-foreground: #414042;
+  --muted: #EBEBEB;
+  --muted-foreground: #706F6F;
+  /* Accent = Wadhwani Orange #F68721 */
+  --accent: #F68721;
+  --accent-foreground: #FFFFFF;
+  --destructive: #BF2026;
+  --border: #E0DCDA;
+  --input: #E0DCDA;
+  --ring: #BF2026;
+  /* Charts using brand palette */
+  --chart-1: #BF2026;
+  --chart-2: #F68721;
+  --chart-3: #C61629;
+  --chart-4: #F9B122;
+  --chart-5: #414042;
   --sidebar: #FFFFFF;
-  --sidebar-foreground: #1A1A1A;
-  --sidebar-primary: #0B1F3B;
-  --sidebar-primary-foreground: #FAFAFA;
-  --sidebar-accent: #F5F5F5;
-  --sidebar-accent-foreground: #0B1F3B;
-  --sidebar-border: #E5E5E5;
-  --sidebar-ring: #C9A24D;
-  --teal: #0D9488;
-  --teal-light: #14B8A6;
-  --orange: #EA580C;
-  --blue: #1E40AF;
+  --sidebar-foreground: #414042;
+  --sidebar-primary: #BF2026;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F5F2F0;
+  --sidebar-accent-foreground: #414042;
+  --sidebar-border: #E0DCDA;
+  --sidebar-ring: #BF2026;
+  /* Extended brand palette */
+  --brand-red: #BF2026;
+  --brand-orange: #F68721;
+  --brand-dark: #414042;
+  --brand-deep-red: #C61629;
+  --brand-amber: #F9B122;
+  --brand-yellow: #FFCC00;
 }
 
 .dark {
-  --background: #0B1F3B;
-  --foreground: #FAFAFA;
-  --card: #142B4A;
-  --card-foreground: #FAFAFA;
-  --popover: #142B4A;
-  --popover-foreground: #FAFAFA;
-  --primary: #C9A24D;
-  --primary-foreground: #0B1F3B;
-  --secondary: #1A3454;
-  --secondary-foreground: #FAFAFA;
-  --muted: #1A3454;
-  --muted-foreground: #9CA3AF;
-  --accent: #C9A24D;
-  --accent-foreground: #0B1F3B;
-  --destructive: #DC2626;
-  --border: #2D4A66;
-  --input: #2D4A66;
-  --ring: #C9A24D;
-  --chart-1: #C9A24D;
-  --chart-2: #FAFAFA;
-  --chart-3: #6B7280;
-  --chart-4: #9CA3AF;
-  --chart-5: #1A3454;
-  --sidebar: #142B4A;
-  --sidebar-foreground: #FAFAFA;
-  --sidebar-primary: #C9A24D;
-  --sidebar-primary-foreground: #0B1F3B;
-  --sidebar-accent: #1A3454;
-  --sidebar-accent-foreground: #FAFAFA;
-  --sidebar-border: #2D4A66;
-  --sidebar-ring: #C9A24D;
+  --background: #414042;
+  --foreground: #FFFFFF;
+  --card: #414042;
+  --card-foreground: #FFFFFF;
+  --popover: #414042;
+  --popover-foreground: #FFFFFF;
+  --primary: #BF2026;
+  --primary-foreground: #FFFFFF;
+  --secondary: #706F6F;
+  --secondary-foreground: #FFFFFF;
+  --muted: #706F6F;
+  --muted-foreground: #B2B2B2;
+  --accent: #F68721;
+  --accent-foreground: #414042;
+  --destructive: #C61629;
+  --border: #706F6F;
+  --input: #706F6F;
+  --ring: #F68721;
+  --chart-1: #BF2026;
+  --chart-2: #F68721;
+  --chart-3: #FFFFFF;
+  --chart-4: #E8412C;
+  --chart-5: #C61629;
+  --sidebar: #414042;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #BF2026;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #706F6F;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #706F6F;
+  --sidebar-ring: #F68721;
 }
 
 @layer base {
@@ -132,7 +140,28 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .surface-gradient {
+    background-color: var(--background);
+    background-image:
+      radial-gradient(circle at top right, rgba(246, 135, 33, 0.09), transparent 30%),
+      radial-gradient(circle at bottom left, rgba(191, 32, 38, 0.07), transparent 34%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 242, 240, 0.7));
+  }
+
+  .surface-gradient-soft {
+    background-color: var(--card);
+    background-image:
+      radial-gradient(circle at top left, rgba(246, 135, 33, 0.06), transparent 28%),
+      radial-gradient(circle at bottom right, rgba(191, 32, 38, 0.05), transparent 32%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(250, 246, 244, 0.9));
   }
 }
 
@@ -143,4 +172,223 @@
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+.dna-helix {
+  position: absolute;
+  inset: 0;
+  opacity: 0.42;
+  filter: blur(0.1px);
+}
+
+.dna-helix-primary {
+  left: auto;
+  right: clamp(1rem, 8vw, 6rem);
+  width: min(28rem, 34vw);
+}
+
+.dna-helix-secondary {
+  left: clamp(-4rem, 2vw, 1rem);
+  top: 12%;
+  width: min(18rem, 22vw);
+  opacity: 0.24;
+}
+
+.dna-helix-hero {
+  right: clamp(0rem, 6vw, 4rem);
+  width: min(34rem, 42vw);
+  opacity: 0.82;
+}
+
+.dna-helix-hero-secondary {
+  left: clamp(-2rem, 4vw, 3rem);
+  top: 6%;
+  width: min(20rem, 26vw);
+  opacity: 0.46;
+}
+
+.dna-row {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform-origin: center;
+  animation: dna-drift 10s ease-in-out infinite;
+}
+
+.dna-row-compact {
+  animation-duration: 12s;
+}
+
+.dna-node {
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 9999px;
+  box-shadow: 0 0 20px rgba(246, 135, 33, 0.32);
+  animation: dna-sway 10s ease-in-out infinite;
+}
+
+.dna-node-left {
+  background: linear-gradient(135deg, rgba(191, 32, 38, 0.85), rgba(246, 135, 33, 0.65));
+}
+
+.dna-node-right {
+  background: linear-gradient(135deg, rgba(246, 135, 33, 0.9), rgba(255, 204, 0, 0.7));
+  animation-name: dna-sway-reverse;
+}
+
+.dna-rung {
+  height: 1px;
+  flex: 1;
+  margin: 0 0.85rem;
+  background: linear-gradient(
+    90deg,
+    rgba(191, 32, 38, 0.15),
+    rgba(246, 135, 33, 0.35),
+    rgba(191, 32, 38, 0.15)
+  );
+  transform-origin: center;
+  animation: dna-pulse 10s ease-in-out infinite;
+}
+
+@keyframes dna-drift {
+  0%,
+  100% {
+    transform: translateX(-18%) scaleX(0.78);
+    opacity: 0.38;
+  }
+  25% {
+    transform: translateX(18%) scaleX(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateX(-10%) scaleX(0.84);
+    opacity: 0.46;
+  }
+  75% {
+    transform: translateX(16%) scaleX(0.98);
+    opacity: 0.84;
+  }
+}
+
+@keyframes dna-sway {
+  0%,
+  100% {
+    transform: scale(0.82);
+    opacity: 0.42;
+  }
+  25% {
+    transform: scale(1.14);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  75% {
+    transform: scale(1.08);
+    opacity: 0.96;
+  }
+}
+
+@keyframes dna-sway-reverse {
+  0%,
+  100% {
+    transform: scale(1.14);
+    opacity: 0.95;
+  }
+  25% {
+    transform: scale(0.82);
+    opacity: 0.42;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.86;
+  }
+  75% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+}
+
+@keyframes dna-pulse {
+  0%,
+  100% {
+    opacity: 0.24;
+    transform: scaleX(0.78);
+  }
+  25% {
+    opacity: 0.72;
+    transform: scaleX(1);
+  }
+  50% {
+    opacity: 0.22;
+    transform: scaleX(0.82);
+  }
+  75% {
+    opacity: 0.48;
+    transform: scaleX(0.98);
+  }
+}
+
+.dark .dna-helix {
+  opacity: 0.3;
+}
+
+.dark .surface-gradient {
+  background-image:
+    radial-gradient(circle at top right, rgba(246, 135, 33, 0.1), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(191, 32, 38, 0.12), transparent 34%),
+    linear-gradient(180deg, rgba(65, 64, 66, 0.98), rgba(76, 74, 74, 0.9));
+}
+
+.dark .surface-gradient-soft {
+  background-image:
+    radial-gradient(circle at top left, rgba(246, 135, 33, 0.08), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(191, 32, 38, 0.1), transparent 32%),
+    linear-gradient(180deg, rgba(65, 64, 66, 0.96), rgba(80, 78, 78, 0.88));
+}
+
+.dark .dna-rung {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(246, 135, 33, 0.28),
+    rgba(255, 255, 255, 0.08)
+  );
+}
+
+@media (max-width: 768px) {
+  .dna-helix-primary {
+    right: -2.5rem;
+    width: 15rem;
+  }
+
+  .dna-helix-secondary {
+    left: -3.5rem;
+    width: 10rem;
+  }
+
+  .dna-node {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+  .dna-rung {
+    margin: 0 0.45rem;
+  }
+
+  .dna-helix-hero {
+    right: -3rem;
+    width: 17rem;
+    opacity: 0.66;
+  }
+
+  .dna-helix-hero-secondary {
+    left: -3rem;
+    width: 11rem;
+    opacity: 0.34;
+  }
 }
