@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -79,7 +78,6 @@ export default function Header() {
                   {item}
                 </button>
               ))}
-              <ThemeToggle />
               <button
                 onClick={() => navigate("/contact")}
                 className="px-4 py-2 bg-accent text-accent-foreground text-sm font-medium hover:bg-accent/90 transition-colors"
@@ -90,7 +88,6 @@ export default function Header() {
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-3">
-              <ThemeToggle />
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="w-10 h-10 flex flex-col items-center justify-center gap-1.5"
