@@ -1,7 +1,6 @@
 import { AuthProvider } from "./auth";
 import { ConvexProvider } from "./convex";
 import { QueryClientProvider } from "./query-client";
-import { ThemeProvider } from "./theme";
 import { Toaster } from "../ui/sonner";
 import { TooltipProvider } from "../ui/tooltip";
 
@@ -15,10 +14,8 @@ export function DefaultProviders({
       <ConvexProvider>
         <QueryClientProvider>
           <TooltipProvider>
-            <ThemeProvider>
-              <Toaster />
-              {children}
-            </ThemeProvider>
+            <Toaster />
+            {children}
           </TooltipProvider>
         </QueryClientProvider>
       </ConvexProvider>

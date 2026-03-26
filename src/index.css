@@ -3,8 +3,6 @@
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
 
-@custom-variant dark (&:is(.dark *));
-
 @theme inline {
   --font-sans:
     "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
@@ -99,40 +97,6 @@
   --brand-deep-red: #C61629;
   --brand-amber: #F9B122;
   --brand-yellow: #FFCC00;
-}
-
-.dark {
-  --background: #414042;
-  --foreground: #FFFFFF;
-  --card: #414042;
-  --card-foreground: #FFFFFF;
-  --popover: #414042;
-  --popover-foreground: #FFFFFF;
-  --primary: #BF2026;
-  --primary-foreground: #FFFFFF;
-  --secondary: #706F6F;
-  --secondary-foreground: #FFFFFF;
-  --muted: #706F6F;
-  --muted-foreground: #B2B2B2;
-  --accent: #F68721;
-  --accent-foreground: #414042;
-  --destructive: #C61629;
-  --border: #706F6F;
-  --input: #706F6F;
-  --ring: #F68721;
-  --chart-1: #BF2026;
-  --chart-2: #F68721;
-  --chart-3: #FFFFFF;
-  --chart-4: #E8412C;
-  --chart-5: #C61629;
-  --sidebar: #414042;
-  --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #BF2026;
-  --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #706F6F;
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #706F6F;
-  --sidebar-ring: #F68721;
 }
 
 @layer base {
@@ -331,33 +295,6 @@
     opacity: 0.48;
     transform: scaleX(0.98);
   }
-}
-
-.dark .dna-helix {
-  opacity: 0.3;
-}
-
-.dark .surface-gradient {
-  background-image:
-    radial-gradient(circle at top right, rgba(246, 135, 33, 0.1), transparent 30%),
-    radial-gradient(circle at bottom left, rgba(191, 32, 38, 0.12), transparent 34%),
-    linear-gradient(180deg, rgba(65, 64, 66, 0.98), rgba(76, 74, 74, 0.9));
-}
-
-.dark .surface-gradient-soft {
-  background-image:
-    radial-gradient(circle at top left, rgba(246, 135, 33, 0.08), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(191, 32, 38, 0.1), transparent 32%),
-    linear-gradient(180deg, rgba(65, 64, 66, 0.96), rgba(80, 78, 78, 0.88));
-}
-
-.dark .dna-rung {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.08),
-    rgba(246, 135, 33, 0.28),
-    rgba(255, 255, 255, 0.08)
-  );
 }
 
 @media (max-width: 768px) {
