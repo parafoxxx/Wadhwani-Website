@@ -15,11 +15,6 @@ export default function People() {
       image: "/ashok-kumar-profile.jpg",
     },
     {
-      name: "Dr. Sandeep Verma",
-      title: "Program Co-coordinator, Computer Science & AI",
-      expertise: "Leads the bioengineering and biotech focus area and WIN project coordination.",
-    },
-    {
       name: "Dr. Prerna Singh",
       title: "Program Co-coordinator, Bioengineering & Biotech",
       email: "prernas@iitk.ac.in",
