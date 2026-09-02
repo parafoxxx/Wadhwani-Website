@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "./Logo";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -47,17 +48,13 @@ export default function Header() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="flex items-center justify-between h-20 sm:h-24">
+          <div className="flex items-center justify-between h-24 sm:h-28">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="group flex min-w-0 items-center"
               aria-label="Scroll to top"
             >
-              <img
-                src="/image.png"
-                alt="WIN Center of Excellence, IIT Kanpur, and Wadhwani Foundation logos"
-                className="h-16 w-[min(78vw,24rem)] object-contain object-left sm:h-20 sm:w-[31rem] md:w-[28rem] lg:h-[5.25rem] lg:w-[39rem] xl:w-[48rem]"
-              />
+              <Logo className="h-16 w-auto object-contain object-left transition-transform duration-300 group-hover:scale-[1.02] sm:h-20 lg:h-24" />
             </button>
 
             {/* Desktop Navigation */}
@@ -103,7 +100,7 @@ export default function Header() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.3 }}
-            className="fixed top-20 right-0 bottom-0 w-64 bg-background border-l border-border z-50 md:hidden"
+            className="fixed top-24 right-0 bottom-0 w-64 bg-background border-l border-border z-50 md:hidden"
           >
             <nav className="flex flex-col p-6 space-y-4">
               {navItems.map((item) => (

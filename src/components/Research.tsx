@@ -32,10 +32,10 @@ export default function Research() {
         >
           <p className="text-sm uppercase tracking-wider text-accent font-medium mb-4">Focus Areas</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-            WCTRI Research Priorities
+            WIN CoE Research Priorities
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mb-16">
-            WCTRI at IIT Kanpur concentrates on bioengineering, biotechnology, and artificial intelligence
+            WIN CoE at IIT Kanpur concentrates on bioengineering, biotechnology, and artificial intelligence
             with a strong translational pathway from research to commercialization.
           </p>
         </motion.div>

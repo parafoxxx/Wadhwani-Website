@@ -43,7 +43,7 @@ export default function Impact() {
             Innovation & Engagement
           </h2>
           <p className="text-lg text-muted-foreground w-full mb-13">
-           WCTRI focuses on strengthening translational research by converting academic discoveries into deployable technologies, fostering collaboration between academia, industry, startups, and policymakers to generate measurable societal and economic impact.
+           WIN CoE focuses on strengthening translational research by converting academic discoveries into deployable technologies, fostering collaboration between academia, industry, startups, and policymakers to generate measurable societal and economic impact.
           </p>
         </motion.div>
 

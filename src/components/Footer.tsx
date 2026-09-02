@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "./useInView";
+import Logo from "./Logo";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -20,7 +21,10 @@ export default function Footer() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="md:col-span-2"
           >
-            <h3 className="font-serif text-2xl font-bold mb-4">Wadhwani Center for Translational Research and Innovation (WCTRI)</h3>
+            <div className="inline-flex bg-white p-4 mb-6 rounded-sm">
+              <Logo className="h-20 w-auto object-contain sm:h-24" />
+            </div>
+            <h3 className="font-serif text-2xl font-bold mb-4">Wadhwani Innovation Network Center of Excellence (WIN CoE)</h3>
             <p className="text-sm opacity-80 leading-relaxed max-w-md mb-6">
               IIT Kanpur, Kalyanpur<br />
               Kanpur, Uttar Pradesh 208016<br />
@@ -89,7 +93,7 @@ export default function Footer() {
           className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-60"
         >
           <div className="text-center md:text-left">
-            (c) {currentYear} Wadhwani Center for Translational Research and Innovation, IIT Kanpur. All rights reserved.
+            (c) {currentYear} Wadhwani Innovation Network Center of Excellence, IIT Kanpur. All rights reserved.
           </div>
           <div className="flex gap-6 text-center md:text-right">
             <button className="translate-y-0 hover:text-accent transition-all duration-200 hover:-translate-y-0.5">Privacy Policy</button>

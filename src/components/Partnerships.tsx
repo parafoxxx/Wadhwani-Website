@@ -93,7 +93,7 @@ export default function Partnerships() {
             className="mb-8 h-1 bg-[#F68721]"
           />
           <p className="text-lg text-muted-foreground max-w-3xl mb-16">
-            WCTRI is anchored by the Wadhwani Foundation and embedded in the IIT Kanpur ecosystem,
+            WIN CoE is anchored by the Wadhwani Foundation and embedded in the IIT Kanpur ecosystem,
             leveraging institutional centers and shared research infrastructure.
           </p>
         </motion.div>

@@ -9,7 +9,7 @@ export default function People() {
   const leadership = [
     {
       name: "Prof. Ashok Kumar",
-      title: "CoE Coordinator, WCTRI (BSBE)",
+      title: "Coordinator, WIN CoE (BSBE)",
       email: "ashokkum@iitk.ac.in",
       expertise: "Coordinates CoE activities, monitors research progress, and reports to the Wadhwani Foundation.",
       image: "/ashok-kumar-profile.jpg",
@@ -43,7 +43,7 @@ export default function People() {
             Leadership & Coordination
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mb-16">
-            WCTRI is led by IIT Kanpur faculty and program coordinators supported by dedicated
+            WIN CoE is led by IIT Kanpur faculty and program coordinators supported by dedicated
             program management and outreach roles.
           </p>
         </motion.div>

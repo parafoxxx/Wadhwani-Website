@@ -68,7 +68,7 @@ export default function Programs() {
             Translational Programs
           </h2>
           <p className="text-lg text-muted-foreground w-full mb-16">
-            WCTRI programs strengthen translational research, accelerate technology development, and
+            WIN CoE programs strengthen translational research, accelerate technology development, and
             build industry-academia partnerships for commercialization.
           </p>
         </motion.div>

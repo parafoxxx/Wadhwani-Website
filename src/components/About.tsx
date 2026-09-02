@@ -16,7 +16,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-8">
-            About WCTRI at IIT Kanpur
+            About WIN CoE at IIT Kanpur
           </h2>
           <motion.div
             initial={{ width: 0 }}
@@ -62,13 +62,13 @@ export default function About() {
           {/* Right Column */}
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              The overall objective of WCTRI at IIT Kanpur is to enhance the ability of both
+              The overall objective of WIN CoE at IIT Kanpur is to enhance the ability of both
               academic and industrial sectors to collaborate effectively in order to innovate
               and create value through a strong focus on long-term research.
             </p>
 
             <p>
-              WCTRI emphasizes responsible innovation aligned with national priorities such as
+              WIN CoE emphasizes responsible innovation aligned with national priorities such as
               <strong> Make in India </strong> and <strong> Atmanirbhar Bharat</strong>, ensuring
               that scientific breakthroughs are transformed into deployable, scalable, and
               sustainable solutions.

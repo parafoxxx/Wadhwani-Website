@@ -74,15 +74,17 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-                    <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-8 text-balance tracking-tight">
-            Wadhwani Center for{" "}
-            <span className="text-primary">Translational Research</span>{" "}&amp;{" "}
-            <span className="text-accent">Innovation</span> {" "}</h2>
+                    <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-8 tracking-tight">
+            <span className="block">
+              Wadhwani <span className="text-accent">Innovation</span> Network
+            </span>
+            <span className="block text-primary">Center of Excellence</span>
+          </h2>
               <h4 className="font-serif text-4xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight mb-8 text-balance">
          IIT Kanpur
               </h4>
           <p className="text-lg md:text-.1xl text-muted-foreground max-w-5xl mx-auto leading-relaxed">
-            The WIN Centre of Excellence (CoE) at IIT Kanpur, established in collaboration with the Wadhwani Foundation, aims at taking groundbreaking innovations in emerging technologies from research laboratory to commercialization aligning with National Health Missions. The promotes interdisciplinary solutions bridging biology, medicine, & engineering to address national & global challenges in healthcare & technology </p> 
+            The Wadhwani Innovation Network Center of Excellence (WIN CoE) at IIT Kanpur, established in collaboration with the Wadhwani Foundation, aims at taking groundbreaking innovations in emerging technologies from research laboratory to commercialization aligning with National Health Missions. The promotes interdisciplinary solutions bridging biology, medicine, & engineering to address national & global challenges in healthcare & technology </p> 
         </motion.div>
 
 

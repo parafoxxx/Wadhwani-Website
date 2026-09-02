@@ -91,7 +91,7 @@ export default function Gallery() {
             Glimpses
           </h2>
           <p className="text-lg opacity-90 max-w-3xl">
-            A glimpse into WCTRI labs, translational programs, and the IIT Kanpur innovation ecosystem.
+            A glimpse into WIN CoE labs, translational programs, and the IIT Kanpur innovation ecosystem.
           </p>
         </motion.div>
 
